@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Transcriber | Speech to Text</title>
+    <link rel="stylesheet" href="att.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Voice Transcriber</h1>
+        <p class="subtitle">Convert your speech to text in real-time</p>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn">
+                <i class="fas fa-microphone mic-icon"></i> Start Listening
+            </button>
+            <button id="stopBtn" class="btn" disabled>
+                <i class="fas fa-stop"></i> Stop
+            </button>
+            <button id="copyBtn" class="btn">
+                <i class="fas fa-copy"></i> Copy Text
+            </button>
+            <button id="clearBtn" class="btn">
+                <i class="fas fa-trash-alt"></i> Clear
+            </button>
+        </div>
+        
+        <div class="result-container">
+            <textarea id="result" readonly placeholder="Your transcribed text will appear here..."></textarea>
+            <div class="voice-waves">
+                <div class="voice-wave"></div>
+                <div class="voice-wave"></div>
+                <div class="voice-wave"></div>
+                <div class="voice-wave"></div>
+                <div class="voice-wave"></div>
+            </div>
+        </div>
+        
+        <div class="status">
+            <p id="status">Press "Start Listening" and allow microphone access</p>
+        </div>
+    </div>
+
+    <script src="att.js"></script>
+</body>
+</html>
